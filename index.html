@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <!--HEADING-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Garrett Hanberg's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/portfolio.css">
+    </head>
+
+    <!--BODY-->
+    <body class="Background">
+
+        <!--NAVIGATION-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--BREAKS ADDED TO INCLUDE SPACE BETWEEN THE NAVBAR AND THE FIRST HEADING-->
+        <br>
+        <br>
+
+        <!--BACKGROUND VIDEO-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./ImagesAndVideos/Coding.mp4" type="video/mp4">
+                <!--DISPLAY MESSAGE IF VIDEO FAILS TO RUN-->
+                Your browser does not support HTML5 videos.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT-->
+        <div class="Video_Text">
+            <h1 class="white-text">Garrett Hanberg's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <br> Hi, my name is Garrett. I am a full-stack software developer, trained and experienced in the following web and programming languages: HTML, CSS, Javascript, SQL, C#, Python and many more.
+                    <br>
+                    <br> Creating beautiful and engaging digital expierences, and turning ideas into real life products is my calling.
+                    <br>
+                    <br> I have a passion for all things technology and design.
+                </p>
+            </strong>
+        </div>
+
+        <!--ABOUT SECTION-->
+        <div class="Row" id="About">
+            <!--LEFT-COLUMN-->
+            <div class="Column_2">
+                <img src="./ImagesAndVideos/image_1.jpg" alt="Typing out code image 1.">
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="Column_1">
+                <h1>About Me</h1>
+                <p>
+                    I am a graduate of <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp. Where I have been trained and have gained expierence in several software languages.
+                    <br>
+                    <br>Along side with being a software developer, I am currently working towards getting my Private Pilot License. As I have always been passionate about flying airplanes.
+                    <br>
+                    <br>I am currently located in the beautiful city of Portland, Oregon.
+                    <br>
+                    <br>Feel free to <a href="#Contact">contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GITHUB SECTION-->
+        <div class="Row" id="GitHub">
+            <!--LEFT COLUMN-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view all of my coding Projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/garretthanberg/" target="_blank">Garrett Hanberg's GitHub</a></p>
+                </p>
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="Column_2">
+                <a href="https://github.com/garretthanberg/" target="_blank"><img src="./ImagesAndVideos/github.jpg" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--CONTACT SECTION-->
+        <div class="Row" id="Contact">
+            <!--CONTACT IMAGE, LEFT COLUMN-->
+            <div class="Column_2 Column_tall">
+                <img src="./ImagesAndVideos/image_2.jpg" alt="Typing out code image 2.">
+            </div>
+            <!--CONTACT FORM, RIGHT COLUMN-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact Me</h1>
+                <!--THIS SPECIFIES WHERE AND HOW TO SEND FORM DATA-->
+                <form action="https://formspree.io/f/xdojpzrl" method="POST"> <!--HERE WE ARE UTILIZING A 3RD PARTY SERVICE TO SUBMIT THE CONTACT FORM DATA-->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please Enter Your Name Here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please Enter Your Email Here">
+                    <label>Message</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please Write Your Message Here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--FOOTER SECTION-->
+        <footer>
+            <p>
+                <p class="center">&copy; Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+            </p>
+        </footer>
+    </body>
+</html>
